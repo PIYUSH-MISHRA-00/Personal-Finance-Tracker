@@ -90,3 +90,6 @@ The application is compatible with all modern browsers:
 - Firefox
 - Safari
 - Edge
+
+## Link
+[Link to the live project](https://personal-finance-tracker-ten-blue.vercel.app/)
