@@ -2,11 +2,21 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   server: {
-    cors: true, // Enable CORS for development
-    allowedHosts: 'all', // Allow all hosts in development
+    cors: {
+      origin: ['http://localhost:3000', 'https://example.com'],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      credentials: true,
+    },
+    allowedHosts: ['localhost', '*.example.com'],
   },
   preview: {
-    cors: true, // Enable CORS for preview
-    allowedHosts: 'all', // Allow all hosts in preview
+    cors: {
+      origin: ['http://localhost:3000', 'https://example.com'],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      credentials: true,
+    },
+    allowedHosts: ['localhost', '*.example.com'],
   },
 })
