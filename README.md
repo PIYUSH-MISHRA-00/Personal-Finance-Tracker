@@ -52,7 +52,7 @@ A comprehensive web application for managing personal finances, tracking expense
 
 1. Clone the repository
 ```sh
-git clone <repository-url>
+git clone https://github.com/PIYUSH-MISHRA-00/Personal-Finance-Tracker.git
 ```
 
 2. Install dependencies
